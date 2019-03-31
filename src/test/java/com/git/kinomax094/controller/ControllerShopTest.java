@@ -58,7 +58,7 @@ public class ControllerShopTest {
     }
 
     @Test
-    public void shopWithBigestpPofit() {
+    public void shopWithBigestpPofit() throws NotFoundException {
 
         Shop x = new Shop();
         when(service.shopWithBigestpPofit()).thenReturn(x);

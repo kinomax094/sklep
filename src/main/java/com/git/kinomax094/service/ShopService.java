@@ -17,64 +17,62 @@ public class ShopService {
     @Autowired
     private ShopRepository repository;
 
-    public Shop addNewObjectByBody(Shop shop){
+    public Shop addNewObjectByBody(Shop shop) {
         repository.save(shop);
         return shop;
     }
 
-    public  Shop addNewObjectByPath(String name, String city, String street, String number) {
+    public Shop addNewObjectByPath(String name, String city, String street, String number) {
         Shop shop = new Shop(name, city, street, number);
         repository.save(shop);
         return shop;
     }
 
-    public  Shop deleteObjectById(Integer id) throws NotFoundException {
+    public Shop deleteObjectById(Integer id) throws NotFoundException {
         Optional<Shop> x = repository.findById(id);
-        if(!x.isPresent()) {
-            throw  new NotFoundException();
+        if (!x.isPresent()) {
+            throw new NotFoundException();
         }
         repository.delete(x.get());
-        return  x.get();
+        return x.get();
     }
 
-    public  Shop findById(Integer id) throws NotFoundException {
+    public Shop findById(Integer id) throws NotFoundException {
         Optional<Shop> x = repository.findById(id);
-        if(!x.isPresent()) {
-            throw  new NotFoundException();
+        if (!x.isPresent()) {
+            throw new NotFoundException();
         }
-        return  x.get();
+        return x.get();
     }
 
 
-    public Shop shopWithBigestpPofit() {
-        Shop result = null;
-        double max = 0;
-        double suma = 0;
-        List<Shop> list = repository.findAll();
+    public Shop shopWithBigestpPofit() throws NotFoundException {
+        Shop result;
 
-        for (Shop shop : list) {
-            for (ProductSold productSold : shop.getProductSolds()) {
-                suma += productSold.getPrice();
-            }
-            if(suma > max) {
-                max = suma;
-                suma = 0;
-                result = shop;
-            }
+        Optional<Shop> shopOptional = repository.findAll().stream()
+                .max(
+                        (o1, o2) -> o1.getProductSolds().stream().mapToDouble(ProductSold::getPrice).sum()
+                                >
+                                o2.getProductSolds().stream().mapToDouble(ProductSold::getPrice).sum()
+                                ? 1 : -1
+                );
+
+        if (!shopOptional.isPresent()) {
+            throw new NotFoundException();
         }
+        result = shopOptional.get();
         return result;
     }
-
 
 
     public String cityWithBigestNumberOfShop() {
         List<Shop> shops = repository.findAll();
         Map<String, Integer> map = new HashMap<>();
         for (Shop shop : shops) {
-            if (map.containsKey(shop.getName())) {
-                map.put(shop.getName(), map.get(shop.getName()) + 1);
+            if (map.containsKey(shop.getCity())) {
+                map.put(shop.getCity(), map.get(shop.getCity()) + 1);
             } else {
-                map.put(shop.getName(), 1);
+                map.put(shop.getCity(), 1);
             }
         }
         int max = 0;
@@ -92,20 +90,10 @@ public class ShopService {
 
 
     public List<Customer> findCustomerWithAmountOfOrdersBigestThatArg(double x) {
-        List<Shop> shops = repository.findAll();
-        List<Customer> result = new ArrayList<Customer>();
-        double suma = 0;
-        for (Shop shop : shops) {
-            for (Customer customer : shop.getCustomers()) {
-                for (ProductSold productSold : customer.getProductSolds()) {
-                    suma += productSold.getPrice();
-                }
-                if(suma > x) {
-                    result.add(customer);
-                }
-                suma = 0;
-            }
-        }
+
+        List<Customer> result = repository.findAll().stream().map(shop -> shop.getCustomers()).flatMap(customers -> customers.stream().filter(customer -> customer.getProductSolds().stream()
+                .mapToDouble(value -> value.getPrice()).sum() > x)).collect(Collectors.toList());
+
         return result;
     }
 
@@ -114,18 +102,17 @@ public class ShopService {
         double max = 0;
         double suma = 0;
         List<Customer> list = repository.findAll().stream().map(n -> n.getCustomers()).
-                flatMap(n-> n.stream()).
+                flatMap(n -> n.stream()).
                 collect(Collectors.toList());
         for (Customer customer : list) {
             for (ProductSold productSold : customer.getProductSolds()) {
                 suma += productSold.getPrice();
             }
-            if(suma > max) {
+            if (suma > max) {
                 max = suma;
                 result = customer;
             }
         }
-
 
         return result.getName() + " " + result.getSurname();
     }

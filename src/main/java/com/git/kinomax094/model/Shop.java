@@ -25,7 +25,7 @@ public class Shop {
 
 
     @JsonBackReference()
-    @OneToMany(mappedBy = "shop", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     List<ProductSold> productSolds = new ArrayList<>();
 
     public Shop(String name, String city, String street, String number) {
@@ -36,12 +36,12 @@ public class Shop {
     }
 
     @JsonBackReference
-    @OneToMany(mappedBy = "shop", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     List<Customer> customers = new ArrayList<>();
 
 
     @JsonBackReference
-    @OneToMany(mappedBy = "shop", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE)
     List<Product> products = new ArrayList<>();
 
     public Integer getId() {

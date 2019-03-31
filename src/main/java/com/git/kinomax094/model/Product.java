@@ -17,7 +17,7 @@ public class Product {
     Integer id;
 
     @JsonManagedReference
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @ManyToOne(cascade = CascadeType.REMOVE)
     Shop shop;
 
     String name;

@@ -1,13 +1,13 @@
 
-INSERT INTO Shop
+INSERT INTO Shop(id,name,city,street,number)
 VALUES (1, 'Extra Pamiątki', 'Warszawa','Wodzickiego','68');
-INSERT INTO Shop
+INSERT INTO Shop(id,name,city,street,number)
 VALUES (2, 'Nasze Pamiątki', 'Kraków','Starzynskiego','39');
-INSERT INTO Shop
+INSERT INTO Shop(id,name,city,street,number)
 VALUES (3, 'Krakowski Pamiątki', 'Kraków','Starzynskiego','32');
-INSERT INTO Shop
+INSERT INTO Shop(id,name,city,street,number)
 VALUES (4, 'Twoje Pamiątki', 'Poznań','Kiedrzynska','70');
-INSERT INTO Shop
+INSERT INTO Shop(id,name,city,street,number)
 VALUES (5, 'Najlepsze Pamiątki', 'Wrocław','PCK','73');
 
 INSERT INTO Customer(id, shop_id, name, surname, city, street, number)

@@ -14,7 +14,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @ManyToOne(cascade = CascadeType.REMOVE)
     Shop shop;
 
     String name;
@@ -28,7 +28,7 @@ public class Customer {
     String number;
 
     @JsonBackReference()
-    @OneToMany(mappedBy = "customer", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     List<ProductSold> productSolds = new ArrayList<>();
 
     public Customer() {

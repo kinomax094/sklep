@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/customer")
 public class ControllerCustomer {
@@ -17,8 +18,8 @@ public class ControllerCustomer {
     private CustomerService service;
 
     @PostMapping("/addNewObjectByBody") // test
-    public Customer addNewObjectByBody(@RequestBody Customer customer){
-        return  service.addNewObjectByBody(customer);
+    public Customer addNewObjectByBody(@RequestBody Customer customer) {
+        return service.addNewObjectByBody(customer);
     }
 //    {
 //        "name": "Ewelina",
@@ -29,28 +30,29 @@ public class ControllerCustomer {
 //    }
 
 
-
     @PostMapping("/addNewObjectByPath/{name}/{surname}/{id_shop}") // test
-    public  Customer addNewObjectByPath(@PathVariable String name,@PathVariable String surname, @PathVariable Integer id_shop) throws NotFoundException {
-        return service.addNewObjectByPath(id_shop, name, surname, null, null, null );
+    public Customer addNewObjectByPath(@PathVariable String name, @PathVariable String surname, @PathVariable Integer id_shop) throws NotFoundException {
+        return service.addNewObjectByPath(id_shop, name, surname, null, null, null);
     }
+
     @DeleteMapping("/deleteObjectById/{id}") // test
-    public  Customer deleteObjectById(@PathVariable Integer id) throws NotFoundException {
-        return  service.deleteObjectById(id);
+    public Customer deleteObjectById(@PathVariable Integer id) throws NotFoundException {
+        return service.deleteObjectById(id);
     }
+
     @GetMapping("/findById/{id}")  // test
-    public  Customer findById(@PathVariable Integer id) throws NotFoundException {
-        return  service.findById(id);
+    public Customer findById(@PathVariable Integer id) throws NotFoundException {
+        return service.findById(id);
     }
 
     @GetMapping("/sumOfSoldProduct/{id}") //test
-    public  Double sumOfSoldProduct(@PathVariable Integer id) throws NotFoundException {
-        return  service.sumOfSoldProduct(id);
+    public Double sumOfSoldProduct(@PathVariable Integer id) throws NotFoundException {
+        return service.sumOfSoldProduct(id);
     }
 
     @GetMapping("/returnTheExpensiveSoldProductFromCustomer/{id}") // test
     public ProductSold returnTheExpensiveProductFromSolded(@PathVariable Integer id) throws NotFoundException {
-        return  service.returnTheExpensiveProduct(id);
+        return service.returnTheExpensiveProduct(id);
     }
 
     @GetMapping("/returnTheExpensiveProduct/{suma}") // test

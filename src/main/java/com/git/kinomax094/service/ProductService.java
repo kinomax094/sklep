@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductService {
@@ -23,15 +24,15 @@ public class ProductService {
     @Autowired
     private ShopRepository shopRepository;
 
-    public Product addNewObjectByBody(Product productSold){
+    public Product addNewObjectByBody(Product productSold) {
         repository.save(productSold);
         return productSold;
     }
 
-    public  Product addNewObjectByPath(String name, Double price, Integer id_shop) throws NotFoundException {
+    public Product addNewObjectByPath(String name, Double price, Integer id_shop) throws NotFoundException {
 
         Optional<Shop> x = shopRepository.findById(id_shop);
-        if(!x.isPresent()) {
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
 
@@ -42,59 +43,50 @@ public class ProductService {
         return product;
     }
 
-    public  Product deleteObjectById(Integer id) throws NotFoundException {
+    public Product deleteObjectById(Integer id) throws NotFoundException {
 
         Optional<Product> x = repository.findById(id);
-        if(!x.isPresent()) {
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
         repository.delete(x.get());
-        return  x.get();
+        return x.get();
 
     }
 
-    public  Product findById(Integer id) throws NotFoundException {
+    public Product findById(Integer id) throws NotFoundException {
         Optional<Product> x = repository.findById(id);
-        if(!x.isPresent()) throw new NotFoundException();
+        if (!x.isPresent()) throw new NotFoundException();
         return x.get();
     }
 
 
     public List<Product> findByIdShop(Integer id) throws NotFoundException {
+
         Optional<Shop> x = shopRepository.findById(id);
-        if(!x.isPresent()) {
+
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
-        List<Product> list = repository.findAll();
-        List<Product> result = new ArrayList<>();
-        for (Product product : list) {
-            if(product.getShop().equals(x.get())){
-                result.add(product);
-            }
-        }
-        return result;
+
+        List<Product> list = repository.findAll().stream().filter(product -> product.getShop().equals(x.get())).collect(Collectors.toList());
+
+        return list;
     }
 
 
-    public Integer conuntHowManyProductIsTheSame(Product same){
-        Integer result = 0;
-        List<Product> list = repository.findAll();
-        for (Product product : list) {
-            if(product.equals(same)) {
-                result++;
-            }
-        }
+    public Integer conuntHowManyProductIsTheSame(Product same) {
+
+        Integer result = Math.toIntExact(repository.findAll().stream().filter(product -> product.equals(same)).count());
+
         return result;
     }
 
     public Integer countHowMuchProductCostMore(Double x) {
-        Integer result = 0;
+
+        Integer result = Math.toIntExact(repository.findAll().stream().filter(product -> product.getPrice() > x).count());
         List<Product> list = repository.findAll();
-        for (Product product : list) {
-            if(product.getPrice() > x){
-                result++;
-            }
-        }
+
         return result;
     }
 

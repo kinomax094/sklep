@@ -16,11 +16,11 @@ public class ProductSold {
     Integer id;
 
     @JsonManagedReference()
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @ManyToOne(cascade = CascadeType.REMOVE)
     Shop shop;
 
     @JsonManagedReference()
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @ManyToOne(cascade = CascadeType.REMOVE)
     Customer customer;
 
     String name;

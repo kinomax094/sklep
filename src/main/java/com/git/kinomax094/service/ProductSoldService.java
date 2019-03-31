@@ -14,6 +14,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductSoldService {
@@ -28,19 +29,19 @@ public class ProductSoldService {
     private ShopRepository shopRepository;
 
 
-    public ProductSold addNewObjectByBody(ProductSold productSold){
+    public ProductSold addNewObjectByBody(ProductSold productSold) {
         repository.save(productSold);
         return productSold;
     }
 
-    public  ProductSold addNewObjectByPath(String name, Double price, Integer id_shop, Integer id_costomer) throws NotFoundException {
+    public ProductSold addNewObjectByPath(String name, Double price, Integer id_shop, Integer id_costomer) throws NotFoundException {
         Optional<Shop> x = shopRepository.findById(id_shop);
-        if(!x.isPresent()) {
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
 
         Optional<Customer> y = repositoryCustomer.findById(id_costomer);
-        if(!y.isPresent()) {
+        if (!y.isPresent()) {
             throw new NotFoundException();
         }
 
@@ -50,71 +51,50 @@ public class ProductSoldService {
         return productSold;
     }
 
-    public  ProductSold deleteObjectById(Integer id) throws NotFoundException {
+    public ProductSold deleteObjectById(Integer id) throws NotFoundException {
         Optional<ProductSold> x = repository.findById(id);
-        if(!x.isPresent()) {
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
         repository.delete(x.get());
-        return  x.get();
+        return x.get();
     }
 
-    public  ProductSold findById(Integer id) throws NotFoundException {
+    public ProductSold findById(Integer id) throws NotFoundException {
         Optional<ProductSold> x = repository.findById(id);
-        if(!x.isPresent()) throw new NotFoundException();
+        if (!x.isPresent()) throw new NotFoundException();
         return x.get();
     }
 
     public List<ProductSold> findByIdCustomer(Integer id) throws NotFoundException {
         Optional<Customer> x = repositoryCustomer.findById(id);
-        if(!x.isPresent()) {
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
-        List<ProductSold> list = repository.findAll();
-        List<ProductSold> result = new ArrayList<>();
-        for (ProductSold productSold : list) {
-            if(productSold.getCustomer().getId() == id){
-                result.add(productSold);
-            }
-        }
-        return result;
+        List<ProductSold> list = repository.findAll().stream().filter(productSold -> productSold.getCustomer().equals(x.get())).collect(Collectors.toList());
+
+        return list;
     }
 
     public List<ProductSold> findByIdShop(Integer id) throws NotFoundException {
         Optional<Shop> x = shopRepository.findById(id);
-        if(!x.isPresent()) {
+        if (!x.isPresent()) {
             throw new NotFoundException();
         }
-        List<ProductSold> list = repository.findAll();
-        List<ProductSold> result = new ArrayList<>();
-        for (ProductSold productSold : list) {
-            if(productSold.getShop().getId() == id){
-                result.add(productSold);
-            }
-        }
-        return result;
+        List<ProductSold> list = repository.findAll().stream().filter(productSold -> productSold.getShop().equals(x.get())).collect(Collectors.toList());
+        return list;
     }
 
 
     public Integer conuntHowManyProductIsTheSame(ProductSold product) {
-        Integer result = 0;
-        List<ProductSold> list = repository.findAll();
-        for (ProductSold productSold : list) {
-            if(product.equals(productSold)) {
-                result++;
-            }
-        }
+
+        Integer result = Math.toIntExact(repository.findAll().stream().filter(productSold -> product.equals(product)).count());
+
         return result;
     }
 
     public Integer countHowMuchProductCostMore(Double x) {
-        Integer result = 0;
-        List<ProductSold> list = repository.findAll();
-        for (ProductSold productSold : list) {
-            if(productSold.getPrice() > x){
-                result++;
-            }
-        }
+        Integer result = Math.toIntExact(repository.findAll().stream().filter(productSold -> productSold.getPrice() > x).count());
         return result;
     }
 
