@@ -40,7 +40,7 @@ public class ControllerCustomerTestContext {
 
     @Test
     public void sumOfSoldProductId2() throws NotFoundException {
-        Assert.assertEquals(java.util.Optional.of(240.0).get(), controllerCustomer.sumOfSoldProduct(2));
+        Assert.assertEquals(java.util.Optional.of(16.0).get(), controllerCustomer.sumOfSoldProduct(2));
     }
 
 }

@@ -7,6 +7,7 @@ import com.git.kinomax094.model.Shop;
 import com.git.kinomax094.repository.ShopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -46,6 +47,7 @@ public class ShopService {
     }
 
 
+    @Transactional
     public Shop shopWithBigestpPofit() throws NotFoundException {
         Shop result;
 
@@ -89,6 +91,7 @@ public class ShopService {
     }
 
 
+    @Transactional
     public List<Customer> findCustomerWithAmountOfOrdersBigestThatArg(double x) {
 
         List<Customer> result = repository.findAll().stream().map(shop -> shop.getCustomers()).flatMap(customers -> customers.stream().filter(customer -> customer.getProductSolds().stream()

@@ -14,7 +14,6 @@ public class Shop {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-
     String name;
 
     String city;
@@ -25,7 +24,7 @@ public class Shop {
 
 
     @JsonBackReference()
-    @OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "shop", cascade = CascadeType.REMOVE)
     List<ProductSold> productSolds = new ArrayList<>();
 
     public Shop(String name, String city, String street, String number) {

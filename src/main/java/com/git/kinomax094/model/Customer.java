@@ -1,6 +1,7 @@
 package com.git.kinomax094.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ public class Customer {
     String number;
 
     @JsonBackReference()
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE)
     List<ProductSold> productSolds = new ArrayList<>();
 
     public Customer() {

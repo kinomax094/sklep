@@ -8,6 +8,7 @@ import com.git.kinomax094.repository.CustomerRepository;
 import com.git.kinomax094.repository.ShopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -55,6 +56,7 @@ public class CustomerService {
     }
 
 
+    @Transactional
     public Double sumOfSoldProduct(Integer id) throws NotFoundException {
 
         Optional<Customer> x = repository.findById(id);
