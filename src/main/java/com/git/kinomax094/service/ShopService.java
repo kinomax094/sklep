@@ -130,4 +130,9 @@ public class ShopService {
         return result.getName() + " " + result.getSurname();
     }
 
+
+
+    public List<Shop>  findShopWithProductSoldOverPrice(Double price) {
+        return repository.findShopWithProductSoldOverPrice(price);
+    }
 }

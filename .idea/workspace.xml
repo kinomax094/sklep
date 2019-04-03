@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a35ef03-97a0-47ca-a442-b94c77052b17" name="Default Changelist" comment="" />
+    <list default="true" id="7a35ef03-97a0-47ca-a442-b94c77052b17" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerSoldProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerSoldProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/ProductSold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/ProductSold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ShopRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/SoldProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/SoldProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ProductSoldService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ProductSoldService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/git/kinomax094/controller/ControllerCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/git/kinomax094/controller/ControllerCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/git/kinomax094/controller/ControllerSoldProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/git/kinomax094/controller/ControllerSoldProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/git/kinomax094/repository/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/git/kinomax094/repository/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/git/kinomax094/repository/SoldProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/git/kinomax094/repository/SoldProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/git/kinomax094/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/git/kinomax094/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/git/kinomax094/service/ProductSoldService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/git/kinomax094/service/ProductSoldService.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,10 +32,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerProduct.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="10" column="114" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="114" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerShop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="215">
+              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1742#1743#0" expanded="true" />
@@ -38,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ShopService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/ProductSold.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,12 +82,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Shop.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="229">
+              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3760#3761#0" expanded="true" />
+                <element signature="e#3823#3824#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +119,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -85,27 +130,27 @@
         <option value="$PROJECT_DIR$/src/resources/date.sql" />
         <option value="$PROJECT_DIR$/src/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/resources/data.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ProductRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ShopRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/SoldProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/exceptions/NotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Product.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/git/kinomax094/controller/ControllerCustomerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/git/kinomax094/controller/ControllerProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/git/kinomax094/controller/ControllerShopTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/git/kinomax094/controller/ControllerSoldProductTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Shop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/ProductSold.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ProductSoldService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerSoldProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerShop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/SoldProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerShop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ShopRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java" />
       </list>
     </option>
   </component>
@@ -126,10 +171,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1378" />
-    <option name="height" value="733" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -186,7 +231,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kinomax094" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projekt_Zaliczeniowy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projekt_Zaliczeniowy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kinomax094" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projekt_Zaliczeniowy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projekt_Zaliczeniowy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kinomax094" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projekt_Zaliczeniowy" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +305,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553535159929" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554316892800" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
@@ -405,9 +468,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28679818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17927383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -416,15 +480,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.335" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5714286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32833335" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32718894" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962063" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,7 +499,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27769348" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30408472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -444,7 +508,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.335" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30875576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,7 +516,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32833335" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32718894" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962063" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -585,40 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/SoldProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ProductRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="76" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ShopRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -643,30 +677,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#conuntHowManyProductIsTheSame#0;class#ProductService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,26 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/ProductSold.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -731,10 +721,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ProductSoldService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+        <state relative-caret-position="1853">
+          <caret line="122" column="60" selection-start-line="122" selection-start-column="60" selection-end-line="122" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -743,28 +755,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerSoldProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        <state relative-caret-position="287">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ShopService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="319">
+          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerShop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="215">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1742#1743#0" expanded="true" />
@@ -785,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="238">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -793,10 +795,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/ShopService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/ShopRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="246">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/SoldProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/ProductSold.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/controller/ControllerCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/repository/CustomerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3760#3761#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/git/kinomax094/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="114" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="114" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

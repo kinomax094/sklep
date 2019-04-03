@@ -61,4 +61,10 @@ public class ControllerShop {
     public String findCustomerWithBigestSoldProduct() {
         return  service.findCustomerWithBigestSoldProduct();
     }
+
+
+    @GetMapping("/findShopWithProductSoldOverPrice/{price}")
+    public List<Shop>  findShopWithProductSoldOverPrice(@PathVariable Double price) {
+        return service.findShopWithProductSoldOverPrice(price);
+    }
 }

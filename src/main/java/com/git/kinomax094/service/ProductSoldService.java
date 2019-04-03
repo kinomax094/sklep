@@ -118,4 +118,9 @@ public class ProductSoldService {
         return result;
     }
 
+
+    public List<ProductSold> findProductWitBigestPrice(Double number) {
+        return repository.findProductWitBigestPrice(number);
+    }
+
 }

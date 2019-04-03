@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+
+@NamedQueries(value = {@NamedQuery(name = "Customer.show", query = "select a.name From Customer  a  join a.shop b " +
+        "where b.name =:shopName  and a.name = :customerName" )})
 @Entity
 public class Customer {
 

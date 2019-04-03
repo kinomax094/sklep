@@ -85,4 +85,9 @@ public class ControllerSoldProduct {
     public Integer countHowMuchProductCostMore(@PathVariable Double x) {
         return service.countHowMuchProductCostMore(x);
     }
+
+    @GetMapping("/findProductWitBigestPrice/{number}")
+    public List<ProductSold> findProductWitBigestPrice(@PathVariable Double number){
+        return service.findProductWitBigestPrice(number);
+    }
 }

@@ -63,4 +63,14 @@ public class ControllerCustomer {
         return service.findAllCustomerBuyLessThat(suma);
     }
 
+
+    @GetMapping("/findByNameWhereNameStartWithLetter/{letter}")
+    public  List<Customer> findByNameStartingWithLetter(@PathVariable  String letter) {
+        return service.findByNameWhereNameStartWithLetter(letter);
+    }
+
+    @GetMapping("/show/{shopName}/{customerName}")
+    public List<String> show(@PathVariable String shopName, @PathVariable String customerName) {
+        return  service.show(shopName, customerName);
+    }
 }

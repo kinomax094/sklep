@@ -106,4 +106,12 @@ public class CustomerService {
         return  result;
     }
 
+    public  List<Customer> findByNameWhereNameStartWithLetter(String letter) {
+        return repository.findByNameWhereNameStartWithLetter(letter);
+    }
+
+
+    public  List<String> show(String shopName, String customerName) {
+        return  repository.show(shopName, customerName);
+    }
 }

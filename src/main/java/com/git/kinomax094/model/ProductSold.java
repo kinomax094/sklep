@@ -87,4 +87,6 @@ public class ProductSold {
     public int hashCode() {
         return Objects.hash(name, price);
     }
+
+
 }
